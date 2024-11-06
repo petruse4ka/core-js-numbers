@@ -19,8 +19,8 @@
  *   5, 5  => 25
  */
 function getRectangleArea(width, height) {
-  const result = width * height;
-  return result;
+  const area = width * height;
+  return area;
 }
 
 /**
@@ -35,8 +35,8 @@ function getRectangleArea(width, height) {
  *   0    => 0
  */
 function getCircleCircumference(radius) {
-  const result = 2 * 3.141592653589793 * radius;
-  return result;
+  const radius = 2 * 3.141592653589793 * radius;
+  return radius;
 }
 
 /**
@@ -52,8 +52,8 @@ function getCircleCircumference(radius) {
  *  -3, 3  => 0
  */
 function getAverage(value1, value2) {
-  const result = value1 / 2 + value2 / 2;
-  return result;
+  const average = value1 / 2 + value2 / 2;
+  return average;
 }
 
 /**
@@ -72,8 +72,8 @@ function getAverage(value1, value2) {
  *   (-5,0) (10,-10) => 18.027756377319946
  */
 function getDistanceBetweenPoints(x1, y1, x2, y2) {
-  const result = Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
-  return result;
+  const distance = Math.sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+  return distance;
 }
 
 /**
@@ -89,8 +89,8 @@ function getDistanceBetweenPoints(x1, y1, x2, y2) {
  *   5*x = 0         => 0
  */
 function getLinearEquationRoot(a, b) {
-  const result = (0 - b) / a;
-  return result;
+  const x = (0 - b) / a;
+  return x;
 }
 
 /**
@@ -114,8 +114,8 @@ function getAngleBetweenVectors(x1, y1, x2, y2) {
   const sum = x1 * x2 + y1 * y2;
   const firstLength = Math.sqrt(x1 * x1 + y1 * y1);
   const secondLength = Math.sqrt(x2 * x2 + y2 * y2);
-  const result = Math.acos(sum / (firstLength * secondLength));
-  return result;
+  const angle = Math.acos(sum / (firstLength * secondLength));
+  return angle;
 }
 
 /**
@@ -166,8 +166,8 @@ function parseNumberFromString(value) {
  *   1,2,3   => 3.741657386773941
  */
 function getParallelepipedDiagonal(a, b, c) {
-  const result = Math.sqrt(a * a + b * b + c * c);
-  return result;
+  const length = Math.sqrt(a * a + b * b + c * c);
+  return length;
 }
 
 /**
@@ -188,9 +188,9 @@ function getParallelepipedDiagonal(a, b, c) {
  *   1678, 3  => 2000
  */
 function roundToPowerOfTen(num, pow) {
-  const result1 = num / 10 ** pow;
-  const round = Math.round(result1);
-  const result = round * 10 ** pow;
+  const a = num / 10 ** pow;
+  const b = Math.round(a);
+  const result = b * 10 ** pow;
   return result;
 }
 
